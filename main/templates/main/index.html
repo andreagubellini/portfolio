@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Andrea Gubellini - portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/main.css' %}">
+        <link rel="stylesheet" href="{% static '/css/dark-mode.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="shortcut icon" type="image/png" href="{% static '/images/favicon.ico' %}"/>
+      </head>
+    <body>
+       
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+          <div class="custom-control custom-switch" id="switch-controller">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="{% static '/js/dark-mode-switch.min.js' %}"></script>
+          <div class="card-columns">
+                    <div class="card card-body">
+                      <img id="profile" class="zoom" src="{% static '/images/profile.jpg' %}" alt="profilePic" srcset="">
+                      <h3 class="animated fadeIn">Hey! I'm Andrea Gubellini, a Test automation developer.</h3>
+                      <a href="https://github.com/andreagubellini">
+                        <img src="{% static '/images/github.svg' %}" alt="github" srcset="" class="social">
+                      </a>
+                      <a href="mailto:agubellini@yahoo.com">
+                        <img src="{% static '/images/mail.svg' %}" alt="" srcset=""  class="social">
+                      </a>
+                      <a href="https://www.linkedin.com/in/andrea-gubellini-212b0551/">
+                        <img src="{% static '/images/linkedin.svg' %}" alt="" srcset=""  class="social">
+                      </a>  
+                    </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Let me tell you..</h5>
+                      <p class="card-text">
+                        Born in 1992, I have always been passionate about development and tech in general. I started as soon as I was 11 to develop my first applications using Perl. After some time I find my self 
+                        working as a full-time Test Automation Developer. <br>
+                        I contribute to opensource projects, mainly Robotframework and automation focused, on a daily base.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Main Development Skills</h5>
+                      <p class="card-text">
+                        Working with webapps for many years I developed skills 
+                        accross the major languages used on web and Web automation testing.<br>
+                        Most of the time I find my self developing using <b>Python</b> and <b>Robotframework</b>
+                        but you can find a more detailed skill list on <a href="https://drive.google.com/file/d/104Em6hYShugS8H1xc3jzPg9u3B3upUJ1/view">my Curriculum.</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Continuous integration skills</h5>
+                      <p class="card-text">
+                        During 2018 and 2019 I worked hard to understand and work with Continuous integration tools. <br>
+                        I managed to setup a fully functional <b>Docker</b> for Robotframework, a <b>Python continuous deploy</b> Github Action for
+                        my projects and an internal CI Toolkit using docker, xvfb, pabot, RobotFramework, Slack hooks and more.<br>
+                        The CI world intrigues me and I always thrive to learn and create more.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Projects</h5>
+                      <p class="card-text">Here you can find some currently active opensource projects I made.</p>
+                      <li class="list-group-item">
+                        <a href="https://github.com/andreagubellini/robotframework-jiraissueopener">Jira automatic issue opener for Robotframework</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="https://github.com/andreagubellini/robotframework-docker">Multi-browser docker for Robotframework using Xvfb</a>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#">My portfolio using django framework</a>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Blog</h5>
+                      <li class="list-group-item">You can find the working blog I made using Django models <a href="blog">here</a>.</li><br>
+                      <li class="list-group-item">Since the django blog will be empty for most of the time, you can find my dev.to blog <a href="https://dev.to/andreagubellini">here</a>.</li>
+                    </div>
+                  </div>
+                </div>
+                
+        <script src="{% static '/js/dark-mode-switch.min.js' %}" async defer></script>
+        <p id="footer">2020 - Made by Andrea Gubellini using Django, bootstrap css and Deployed to Heroku.</p>
+      </body>
+    
+</html>

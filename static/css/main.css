@@ -1,0 +1,91 @@
+body {
+    padding-top: 5%;
+    display: flex;
+}
+
+.card a {
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: #f0f0f0;
+    background-image: linear-gradient(92deg, #596aff 0%,#3ad7fe 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card a:hover {
+    color: #f0f0f0;
+    background-image: linear-gradient(92deg, #596aff 0%,#3ad7fe 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: font-weight 0.1s ease-in-out;
+}
+
+img {
+    margin: 6px;
+}
+
+h3 {
+    
+    margin-bottom: 1.5rem;
+    margin-right: 2%;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: #f0f0f0;
+    background-image: linear-gradient(92deg, #596aff 0%,#3ad7fe 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+    margin: 10px;
+    float: right;
+}
+
+.zoom {
+    transition: transform .2s; 
+  }
+  
+.zoom:hover {
+transform: scale(1.2); 
+}
+
+#switch-controller {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.social {
+    padding-top: 2%;
+    height: 8%;
+    width: 8%;
+    filter: hue-rotate(240deg) saturate(3.3) grayscale(100%);
+    
+}
+
+p {
+    font-size: 115%;
+}
+
+
+#footer {
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    font-size: 90%;
+}
+
+.article {
+    margin: 80px;
+}

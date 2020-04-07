@@ -1,0 +1,6 @@
+dj-database-url==0.4.2
+Django
+gunicorn
+psycopg2
+pytz
+whitenoise

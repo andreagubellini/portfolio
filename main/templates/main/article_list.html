@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/main.css' %}">
+        <link rel="stylesheet" href="{% static '/css/dark-mode.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="shortcut icon" type="image/png" href="{% static '/images/favicon.ico' %}"/>
+    </head>
+<body>
+     <div class="container text-center">
+     <header>
+       <h1>Blog</h1>
+
+     </header>
+     
+          <div class="custom-control custom-switch" id="switch-controller">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="{% static '/js/dark-mode-switch.min.js' %}"></script>
+                {% block content %}
+                {% for i in object_list %}
+                    <div class="card mt-4 text-center" style="width: auto;">
+                      <div class="article">
+                        <h3><a href="">{{ i.title }}</a></h3>
+                        <p>{{ i.body }}</p>
+                        <p class="blockquote-footer">post by {{ i.author }} on {{ i.published_date }}</p>
+                      </div>
+                    </div>
+                {% endfor %}
+                {% endblock content %}
+     <p id="footer">2020 - Made by Andrea Gubellini using Django, bootstrap css and Deployed to Heroku.</p>
+     </div>
+     
+ </body> 
+</html>
